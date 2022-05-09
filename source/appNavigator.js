@@ -8,16 +8,12 @@ const { Navigator, Screen } = createStackNavigator();
 
 import Home from './screens/Home.js';
 import Cadastrar from './screens/Cadastrar';
+import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 
 const NavBar = createBottomTabNavigator();
 
 const AppNavigator = () => (
     <NavigationContainer>
-        {/* <Navigator inicialRouteName="Rações">
-            <Screen name="Rações" component={Home} ></Screen>
-            <Screen name="Cadastrar" component={Cadastrar} ></Screen>
-        </Navigator> */}
-
         <NavBar.Navigator
             inicialRouteName={Home}
             screenOptions={({route}) => ({
