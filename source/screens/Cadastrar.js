@@ -15,7 +15,7 @@ export default function Cadastrar ({ navigation }) {
                 title="Ir para tela principal"
                 onPress={() => navigation.navigate('Home')}
               /> */}
-              <FormInput></FormInput>
+              <FormInput/>
               <Button title="Voltar" onPress={() => navigation.goBack()} />
             </>
           </KeyboardAvoidingView>

@@ -42,7 +42,6 @@ const FormInput = () => {
         keyboardType="default"
         maxLength={20}
       />
-      <Text> {name} </Text>
       <Text style={styles.label}>Preço(R$):</Text>
       <TextInput
         style={styles.input}
