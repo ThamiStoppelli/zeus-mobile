@@ -5,7 +5,7 @@ import Cards from '../components/Cards';
 function Home ({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text>Rações</Text>
+      <Text style={styles.titulo} >Rações</Text>
       <Cards/>
       <Button
         title="Ir para tela de cadastrar"
@@ -23,4 +23,13 @@ const styles = StyleSheet.create({
     alignItems: 'center', 
     justifyContent: 'center' 
   },
+  titulo: {
+    color: "tomato",
+    fontWeight: "bold",
+    fontSize: 25,
+    lineHeight: 35,
+    textAlign: "center",
+    marginTop: 20,
+    marginBottom: 40
+},
 })
