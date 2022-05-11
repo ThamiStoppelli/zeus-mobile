@@ -29,6 +29,8 @@ const FormInput = () => {
       });
   }
 
+  //estilizar alerts (se eu quiser): https://reactnative.dev/docs/alert
+
 
   return (
     <SafeAreaView style={styles.tela}>

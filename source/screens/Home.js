@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { Button, View, Text } from 'react-native';
+import { Button, View, Text, StyleSheet } from 'react-native';
 import Cards from '../components/Cards';
 
 function Home ({ navigation }) {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+    <View style={styles.container}>
       <Text>Rações</Text>
       <Cards/>
       <Button
@@ -16,3 +16,11 @@ function Home ({ navigation }) {
 }
 
 export default Home;
+
+const styles = StyleSheet.create({
+  container: { 
+    flex: 1, 
+    alignItems: 'center', 
+    justifyContent: 'center' 
+  },
+})
