@@ -21,6 +21,14 @@ const AppNavigator = () => (
     <NavBar.Navigator style={styles.navbar}
       inicialRouteName={Home}
       screenOptions={({ route }) => ({
+        tabBarStyle: {
+          position: 'absolute',
+          bottom: 0,
+          display: 'flex',
+          height: 60,
+          alignItems: 'center',
+        },
+
         tabBarIcon: ({focused, color, size}) => {
           let icon;
 
@@ -35,7 +43,7 @@ const AppNavigator = () => (
       tabBarOptions={{
         activeTintColor: "tomato",
         inactiveTintColor: "grey",
-        labelStyle: { paddingBottom: 1, fontSize: 10 },
+        labelStyle: { paddingBottom: 1, fontSize: 14 },
         style: { padding: 40, height: 80 },
       }}
     >
