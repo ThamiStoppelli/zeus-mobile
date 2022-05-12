@@ -10,11 +10,6 @@ export default function Cadastrar ({ navigation }) {
           <KeyboardAvoidingView behavior="position" enabled>
             <>
               <Text style={styles.titulo}>Cadastrar ração</Text>
-              {/* <FormInput/> */}
-              {/* <Button
-                title="Ir para tela principal"
-                onPress={() => navigation.navigate('Home')}
-              /> */}
               <FormInput/>
               <Button title="Voltar" onPress={() => navigation.goBack()} />
             </>

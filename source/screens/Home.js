@@ -7,10 +7,10 @@ function Home ({ navigation }) {
     <View style={styles.container}>
       <Text style={styles.titulo} >Rações</Text>
       <Cards/>
-      <Button
+      {/* <Button
         title="Ir para tela de cadastrar"
         onPress={() => navigation.navigate('Cadastrar')}
-      />
+      /> */}
     </View>
   );
 }

@@ -70,7 +70,7 @@ const FormInput = () => {
         keyboardType="default"
         maxLength={140}
       />
-      <Button onPress={() => handleSubmit()} title="Cadastrar"/>
+      <Button title="Cadastrar" onPress={() => handleSubmit()} />
 
     </SafeAreaView>
   );
