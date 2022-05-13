@@ -2,14 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { SafeAreaView, View, FlatList, StyleSheet, Text, StatusBar, Button } from 'react-native';
 import api from '../services/api';
 
-// function Card ({ title, price }) {
-//   return (
-//     <View style={styles.item}>
-//       <Text style={styles.title}>Nome: {title}</Text>
-//       <Text>Preço: {price} </Text>
-//     </View>
-//   );
-// } 
+//usar useEffect para atualizar quando é cadastrado algo novo (atualizar a cada 5 segundos quando coloca algo dentro -> lixeira olhar gitlab)
 
 function Card ({ name, price, amount }) {
   return (
@@ -35,14 +28,10 @@ const Cards = () => {
     setData(response.data)
   }
 
-  // const renderItem = ({ item }) => (
-  //   <Item title={item.title} />
-  //   <Item price={item.price} />
-  // );
-
   return (
     <SafeAreaView style={styles.container}>
       <FlatList contentContainerStyle={{ paddingBottom: 60 }}
+        extraData={data}
         data={data}
         keyExtractor={(item) => item.id}
         renderItem={({item}) => (
@@ -60,13 +49,15 @@ const styles = StyleSheet.create({
     
   },
   item: {
-    backgroundColor: 'tomato',
+    backgroundColor: '#EFE6DD',
     //cfcdc8
-    width: 300,
+    width: 320,
     padding: 20,
     marginVertical: 8,
     marginHorizontal: 16,
-    borderRadius: 8
+    borderRadius: 8,
+    // borderWidth: 1,
+    // borderColor: 'black'
   },
   title: {
     fontSize: 16,
